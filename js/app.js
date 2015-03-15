@@ -1,20 +1,12 @@
 //***********************************************
 //* Autor: Vassil Dimitrov                      *
-//* Date: 24.02.2015                            *
+//* Date: 15.03.2015                            *
 //* Last changes at:                 *
 //***********************************************
 
 $(document).ready(function () {
     //Sticky Navigation
     stickyNavigation();
-    menuTog();
-    // anim();
-    // scrollings();
-    // homePassword(); 
-    $(window).click(function(){
-           stickyNavigation();
-
-    });
     $(window).bind('scroll', stickyNavigation());
     $(window).on('resize', stickyNavigation());
 });
@@ -46,49 +38,4 @@ function stickyNavigation() {
     $(window).bind('scroll', function () {
         sticky_navigation();
     });
-}
-/**** add at 26.02.2015  ****/
- function homePassword () {
-    var cover = $('.cover-screen');
-    var pass = $('.center-info-input').val();
-
-    $('.center-info-input').on('blur', function(){
-         var pass_2 = $('.center-info-input').val();
-         var errMessage = $('.message');
-             if(pass_2 == "1"){
-                 cover.css({'display':'none'});
-                 $('body').css({'overflow':'auto'});
-             }else {
-                 $(errMessage).css({'display':'block'});
-             }
-     });
-
-     if(cover) {
-         $('body').css({'overflow':'hidden'});
-     }else {
-         $('body').css({'overflow':'auto'});
-     }
- }
-
-function menuTog() {
-    var menuTrig = $('.hidden-hamburger');
-    var triggedIt =$('.nav-container');
-
-    menuTrig.on('click', function(){
-        triggedIt.toggle();
-        // if(triggedIt.length){
-        //     $('body').css({'overflow':'hidden'});
-        // }else{
-        //     $('body').css({'overflow':'auto'})
-        //     }
-    });
-}
-
-function scrollings () {
-    $("a").click(function() {
-        alert('click');
-    $('html, body').animate({
-        scrollTop: $("#bottom").offset().top
-    }, 100);
-});
 }
