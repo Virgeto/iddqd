@@ -1,9 +1,80 @@
-body {}
+body {
+	background: #fff;
+	font-size: 16px;
+}
+
+a {
+	text-decoration: none;
+}
 
 a:active {
     outline: 0 !important;
 }
+
 a::-moz-focus-inner {
   border: 0 !important;
 }
+
+ul {
+	list-style-type: none;
+	padding: 0;
+	margin: 0;
+}
+
+li {
+	float: left;
+}
+
+/******* HEADER STYLES ******/
+.header-container {
+	height: 40em;
+	background: #fff url('../img/header_bg.jpg') no-repeat center center;
+}
+
+	/*LOGO*/
+.logo-container {
+	margin-top: 3em;
+}
+	/*END LOGO*/
+
+	/*Nav*/
+.nav-container {
+	margin-top: 3em;
+	background: #333;
+}
+
+.nav-cell {
+}
+
+.nav-cell-text:hover{
+	-webkit-transition: .3s ease-in;
+	   -moz-transition: .3s ease-in;
+	    -ms-transition: .3s ease-in;
+	        transition: .3s ease-in;
+	background: #2FAEED;
+}
+
+.nav-cell-text {
+	color: #fff;
+	text-transform: uppercase;
+	display: block;
+	text-align: center;
+	padding: 1em 0;
+	text-shadow: 1px 1px #000;
+}
+
+	/*End Nav*/
+	/*Slogan*/
+.header-slogan {
+	color: #fff;
+	margin-top: 2em;
+	font-size: 4em;
+	font-weight: bold;
+	text-align: center;
+	text-shadow: 2px 2px #111;
+}
+	/*End Slogan*/
+
+/******* END HEADER STYLES ******/
+
 
