@@ -1,6 +1,13 @@
+html {
+	margin: 0;
+	padding: 0;
+}
+
 body {
 	background: #fff;
 	font-size: 16px;
+	margin: 0;
+	padding: 0;
 }
 
 a {
@@ -41,6 +48,8 @@ li {
 .nav-container {
 	margin-top: 3em;
 	background: #333;
+	border-radius: 2em 0 0 2em;
+	overflow: hidden;
 }
 
 .nav-cell {
@@ -77,4 +86,153 @@ li {
 
 /******* END HEADER STYLES ******/
 
+/*ASIDE STYLES*/
 
+.article-container {
+	margin-top: 5em;
+}
+.article-text {
+	text-align: justify;
+	text-indent: 3em;
+	max-width: 35em;
+	margin: 0 auto;
+	max-height: 7em;
+	overflow: hidden;
+}
+
+
+.article-img {
+	width: 18em;
+	height: 18em;
+	overflow: hidden;
+	margin: 0 auto;
+}
+
+.article-img:hover {
+	border-radius: 0;
+	box-shadow: 3px 3px 5px 1px #888;
+
+}
+/*Article-2*/
+#second-article {
+	background: #eee;
+}
+
+.button-1 {
+	border-radius: 0 2em 2em 0;
+}
+/*End Article-2*/
+
+/*Article-2*/
+.wu-logo {
+	margin-top: 7em;
+}
+
+.button-2 {
+	border-radius: 2em 0 0 2em;
+}
+/*End Article-2*/
+/*Article-3*/
+.call-img {
+	margin-top: 0em;
+	margin-left: -5em;
+}
+
+.button-3 {
+	border-radius: 0 2em 2em 0;
+}
+/*End Article-3*/
+/*END ASIDE STYLES*/
+/*FOOTER*/
+.footer-container {
+	background: #000;
+}
+
+.footer-nav-container {
+	background: #000;
+}
+/*END FOOTER*/
+
+/*-----------------------------------------------*/
+/*CONTACTS*/
+.partial-label {
+	font-size: 3em;
+	color: #000;
+}
+
+.contacts-logo {
+	margin-top: 3em !important;
+/*	opacity: .3;*/
+}
+
+.contacts-name {
+	margin-top: 3.5em;
+	font-size: 3em;
+}
+
+.contacts-label {
+	font-size: 1.5em;
+}
+
+.contact-send {
+	background: #2FAEED;
+	border: none;
+	border-radius: 0 2em 2em 0;
+	color: #fff;
+	-webkit-user-select: none;
+	   -moz-user-select: none;
+	        user-select: none;
+
+}
+
+.contact-send>span{
+	color: #fff;
+}
+
+.contact-send:hover {
+	cursor: pointer;
+}
+
+.envelope {
+	color: #fff;
+	opacity: 0;
+}
+
+.contact-send:hover
+.envelope {
+	margin-left: 1em;
+	opacity: 1;
+}
+
+.contact-send:focus
+.envelope {
+	margin-left: 1em;
+	opacity: 1;
+}
+
+.back-button {
+	background: #2FAEED;
+	height: 4em;
+	width: 4em;
+	border-radius: 50%;
+	color: #fff;
+	line-height: 4em;
+}
+
+.back-button:hover {
+	text-shadow: 1px 1px #000;
+	box-shadow: 3px 3px 5px 1px #888;
+}
+/*END CONTACTS*/
+
+/*--------------------------------------------------------*/
+
+/*Western Union*/
+.border {
+	border: 1px solid #111;
+}
+
+.margin-left {
+	margin-left: 3%;
+}
+/*End Western Union*/

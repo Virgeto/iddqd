@@ -25,15 +25,17 @@
     <div class="container header-container cell-12 clearfix">
     <!-- Logo and nav -->
       <div class="cell-12 clearfix">
-        <div class="logo-container cell-4 float-l clearfix">
-          <img src="img/logo.png" alt="">
+        <div class="logo-container cell-3 pull-1 float-l clearfix">
+          <a href="" title="Back to HOME">
+            <img class="" src="img/logo.png" alt="Logo IMG">
+          </a>
         </div>
         <nav>
           <ul class="cell-8 float-l nav-container clearfix">
-            <li class="cell-3 nav-cell"><a class="nav-cell-text" href="">начало</a></li>
-            <li class="cell-3 nav-cell"><a class="nav-cell-text" href="">котировки</a></li>
-            <li class="cell-3 nav-cell"><a class="nav-cell-text" href="">Western union</a></li>
-            <li class="cell-3 nav-cell"><a class="nav-cell-text" href="">контакти</a></li>
+            <li class="cell-3 nav-cell"><a class="nav-cell-text" href="#/home">начало</a></li>
+            <li class="cell-3 nav-cell"><a class="nav-cell-text" href="#first-article">котировки</a></li>
+            <li class="cell-3 nav-cell"><a class="nav-cell-text" href="#second-article">Western union</a></li>
+            <li class="cell-3 nav-cell"><a class="nav-cell-text" href="#third-article">контакти</a></li>
           </ul>
         </nav>
       </div>
@@ -46,11 +48,23 @@
     </div>
   </header>
   <aside>
-    <div ng-view>
+    <div class=" animated fadeIn" ng-view>
     </div>
   </aside>
-  <footer>
-    <div class="container cell-12"></div>
+  <footer class="clearfix footer-container">
+    <div class="container cell-12">
+      <nav>
+        <ul class="cell-8 float-l footer-nav-container clearfix">
+          <li class="cell-3 nav-cell"><a class="nav-cell-text" href="#">начало</a></li>
+          <li class="cell-3 nav-cell"><a class="nav-cell-text" href="#first-article">котировки</a></li>
+          <li class="cell-3 nav-cell"><a class="nav-cell-text" href="#second-article">Western union</a></li>
+          <li class="cell-3 nav-cell"><a class="nav-cell-text" href="#third-article">контакти</a></li>
+        </ul>
+      </nav>
+      <div class="cell-4 float-l">
+        <p class="text-center" style="color: #fff; background: #111">Created by ViRgE 2015</p>        
+      </div>
+    </div>
   </footer>
 </div>
 </body>
