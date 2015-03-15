@@ -1,0 +1,12 @@
+<div class="well clearfix">
+	<div class="well-noborder transition-03 animated bounceInLeft" ng-repeat="currencyTile in currencyList">
+		<a ng-href="#/single/{{currencyTile.name}}">
+			<img class="col-xs-4 currency-list-flag transition-03" ng-src="img/flags/{{currencyTile.flag}}" alt="flag image">
+			<div class="col-xs-8">
+				<p class="currency-list-name">{{currencyTile.name}}</p>
+				<p class="currency-list-name-long">{{currencyTile.info}}</p>
+			</div>
+		</a>
+	</div>
+	<backtohome/>
+</div>
