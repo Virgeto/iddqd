@@ -219,7 +219,9 @@ li {
 	line-height: 4em;
 }
 
-.back-button:hover {
+.back-button:hover,
+.back-button:focus {
+	outline: 0;
 	text-shadow: 1px 1px #000;
 	box-shadow: 3px 3px 5px 1px #888;
 }
