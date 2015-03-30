@@ -36,6 +36,7 @@ li {
 .header-container {
 	height: 40em;
 	background: #fff url('../img/header_bg.jpg') no-repeat center center;
+	border-bottom: 1px solid #ddd;
 }
 
 	/*LOGO*/
@@ -50,9 +51,31 @@ li {
 	background: #333;
 	border-radius: 2em 0 0 2em;
 	overflow: hidden;
+	box-shadow: 0px 2px 5px 1px #888;
 }
 
 .nav-cell {
+	position: relative;
+	overflow: hidden;
+}
+
+.nav-cell:active
+.nav-cell-text {
+	background: #2FAEED;
+}
+
+svg:active
+.nav-cell-text {
+	background: #2FAEED;
+}
+
+svg:hover
+.nav-cell-text {
+	background: #2FAEED;
+}
+svg:focus
+.nav-cell-text {
+	background: #2FAEED;
 }
 
 .nav-cell-text:hover{
@@ -87,6 +110,14 @@ li {
 /******* END HEADER STYLES ******/
 
 /*ASIDE STYLES*/
+
+.aside-main-wrapper {
+	box-shadow: 0px 2px 5px 1px #888 ;
+	margin: -1em auto;
+	margin-bottom: .5em;
+	background: #fff;
+	padding-bottom: 5em;
+}
 
 .article-container {
 	margin-top: 5em;
@@ -146,6 +177,7 @@ li {
 /*FOOTER*/
 .footer-container {
 	background: #000;
+	box-shadow: 0px 0px 5px 1px #888 ;
 }
 
 .footer-nav-container {
@@ -217,13 +249,14 @@ li {
 	border-radius: 50%;
 	color: #fff;
 	line-height: 4em;
+	box-shadow: 0px 2px 5px 1px #888;
 }
 
 .back-button:hover,
 .back-button:focus {
 	outline: 0;
-	text-shadow: 1px 1px #000;
-	box-shadow: 3px 3px 5px 1px #888;
+	text-shadow: 1px 1px #333;
+	box-shadow: 0px 4px 8px 2px #888;
 }
 /*END CONTACTS*/
 
@@ -238,3 +271,16 @@ li {
 	margin-left: 3%;
 }
 /*End Western Union*/
+
+/*SVG styles*/
+svg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 100000;
+}
+circle {
+  fill: rgba(245, 245, 245, 0.2);
+}
