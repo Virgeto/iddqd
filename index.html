@@ -27,15 +27,15 @@
       <div class="cell-12 clearfix">
         <div class="logo-container cell-3 pull-1 float-l clearfix">
           <a href="" title="Back to HOME">
-            <img class="" src="img/logo.png" alt="Logo IMG">
+            <img class="logo-img" src="img/kalbo_v2_2.png" alt="Logo IMG">
           </a>
         </div>
         <nav>
           <ul class="cell-8 float-l nav-container clearfix">
-            <li class="cell-3 nav-cell"><a class="nav-cell-text" href="#/home">начало</a></li>
-            <li class="cell-3 nav-cell"><a class="nav-cell-text" href="#/quotes">котировки</a></li>
-            <li class="cell-3 nav-cell"><a class="nav-cell-text" href="#/western">Western union</a></li>
-            <li class="cell-3 nav-cell"><a class="nav-cell-text" href="#/contact">контакти</a></li>
+            <li class="cell-3 nav-cell"><a class="nav-cell-text"  href="#/home">начало</a></li>
+            <li class="cell-3 nav-cell"><a class="nav-cell-text" ng-click="scrollTo('first-article')">котировки</a></li>
+            <li class="cell-3 nav-cell"><a class="nav-cell-text"ng-click="scrollTo('second-article')">Western union</a></li>
+            <li class="cell-3 nav-cell"><a class="nav-cell-text" ng-click="scrollTo('third-article')" >контакти</a></li>
           </ul>
         </nav>
       </div>
@@ -49,11 +49,11 @@
   </header>
   <aside>
     <div class="">
-    <div class="aside-main-wrapper cell-11 clearfix" ng-view>
+    <div class="aside-main-wrapper cell-11 clearfix" ng-view autoscroll="true">
     </div>
     </div>
   </aside>
-  <footer class="clearfix footer-container">
+  <footer class="clearfix footer-container" id="footer">
     <div class="container cell-12">
       <div class="cell-4 float-l">
         <p class="text-center" style="color: #fff; background: #000">Created by ViRgE 2015</p>        

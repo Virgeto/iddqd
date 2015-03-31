@@ -192,6 +192,7 @@ table {
 td{
 	text-align: center;
 	width: 33.33%;
+	border: 1px solid #888;
 }
 
 tr{
@@ -217,4 +218,65 @@ tr{
 
 li{
 	display: block;
+	color: #333;
+}
+
+/*Table currency*/
+
+.currency-table {
+	width: 100%;
+	border-collapse: collapse;
+	border: 1px solid #888;
+}
+
+.currency-row {
+
+}
+
+.currency-row:first-of-type {
+	background: #2FAEED;
+	color: #fff;
+	font-weight: bold;
+	font-size: 1.4em;
+}
+
+.currency-row:nth-child(even){
+	background: #ddd;
+}
+
+.currency-row>td {
+	padding: 1em;
+}
+
+.currncy-name {
+	
+}
+
+.currency-code {
+	width: 15em;
+	font-weight: bold;
+}
+
+.currency-for {
+	width: 15em;
+}
+
+.currency-buy {
+	width: 30em;
+}
+
+.currency-sell {
+	width: 30em;
+}
+
+.currency-table-container {
+	margin: 0 auto 2em; 
+}
+
+.currency-label {
+	padding-top: 2em;
+}
+
+.currency-nb {
+	color: #888;
 }

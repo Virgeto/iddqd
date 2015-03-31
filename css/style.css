@@ -4,16 +4,16 @@ html {
 }
 
 body {
-	    min-height: 10%;
+    min-height: 10%;
     background-color: #000;
     background: url('images/servicebg.png') repeat-y center center fixed;
-    -moz-background-size: cover;
+       -moz-background-size: cover;
     -webkit-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
+         -o-background-size: cover;
+            background-size: cover;
     background-attachment: fixed;
     font-family: "vodafone", "Lucida Grande",Arial,Sans-serif;
-    font-size: 14px;
+/*    font-size: 14px;*/
     -webkit-font-size-adjust: none;
     font-size-adjust: none;
     font-stretch: normal;
@@ -27,10 +27,12 @@ body {
     background-repeat: repeat;
     vertical-align: middle;
     overflow: scroll;
-/*	background: #fff;
-	font-size: 16px;
-	margin: 0;
-	padding: 0;*/
+	-webkit-user-select: none;
+	   -moz-user-select: none;
+	    -ms-user-select: none;
+	     -o-user-select: none;
+	        user-select: none;
+
 }
 
 a {
@@ -67,17 +69,22 @@ li {
 
 	/*LOGO*/
 .logo-container {
-	margin-top: 3em;
+	margin-top: 1.5em;
+}
+
+.logo-img {
+	width: 10em;
+  	box-shadow: 0 1px 5px 1px #888;
 }
 	/*END LOGO*/
 
 	/*Nav*/
 .nav-container {
 	margin-top: 3em;
-	background: #333;
-	border-radius: 2em 0 0 2em;
+	background: rgba(0,0,0,0.7);
+	border-radius: 2em 0 0 2em; 
 	overflow: hidden;
-	box-shadow: 0px 2px 5px 1px #888;
+	box-shadow: 0px 2px 5px 1px #555;
 }
 
 .nav-cell {
@@ -202,10 +209,11 @@ li {
 .partial-label {
 	font-size: 3em;
 	color: #000;
+	line-height: 1em;
 }
 
 .contacts-logo {
-	margin-top: 3em !important;
+	margin-top: 1.5em !important;
 /*	opacity: .3;*/
 }
 
