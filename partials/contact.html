@@ -1,4 +1,4 @@
-<div class="cell-12 animated bounceInDown clearfix">
+<div class="cell-12 animated fadeInRight clearfix" id="contact">
 	<div class=" well cell-4 pull-2 float-l">
 		<p class="partial-label">Свържете се с нас</p>
 		<form action="submit" class="cell-12">
@@ -12,7 +12,7 @@
 			</div>
 			<div class="form-group cell-11">
 				<p class="">Поща</p>
-				<input type="email" class="cell-12 form-control" placeholder="Въведете вашата поща">
+				<input type='email' validate-email name='email' id='email' ng-model='email' required class="cell-12 form-control" placeholder="Въведете вашата поща">
 			</div>
 			<div class="form-group cell-11">
 				<p class="">Вашето съобшение</p>

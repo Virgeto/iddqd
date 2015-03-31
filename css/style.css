@@ -4,10 +4,33 @@ html {
 }
 
 body {
-	background: #fff;
+	    min-height: 10%;
+    background-color: #000;
+    background: url('images/servicebg.png') repeat-y center center fixed;
+    -moz-background-size: cover;
+    -webkit-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    background-attachment: fixed;
+    font-family: "vodafone", "Lucida Grande",Arial,Sans-serif;
+    font-size: 14px;
+    -webkit-font-size-adjust: none;
+    font-size-adjust: none;
+    font-stretch: normal;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: normal;
+    line-height: 20px;    
+    margin: 0;
+    padding: 0;
+    color: #fff;    
+    background-repeat: repeat;
+    vertical-align: middle;
+    overflow: scroll;
+/*	background: #fff;
 	font-size: 16px;
 	margin: 0;
-	padding: 0;
+	padding: 0;*/
 }
 
 a {
@@ -32,6 +55,9 @@ li {
 	float: left;
 }
 
+.active {
+	background: #2FAEED;
+}
 /******* HEADER STYLES ******/
 .header-container {
 	height: 40em;
@@ -60,20 +86,6 @@ li {
 }
 
 .nav-cell:active
-.nav-cell-text {
-	background: #2FAEED;
-}
-
-svg:active
-.nav-cell-text {
-	background: #2FAEED;
-}
-
-svg:hover
-.nav-cell-text {
-	background: #2FAEED;
-}
-svg:focus
 .nav-cell-text {
 	background: #2FAEED;
 }
@@ -280,7 +292,8 @@ svg {
   width: 100%;
   height: 100%;
   z-index: 100000;
+  overflow: hidden;
 }
 circle {
-  fill: rgba(245, 245, 245, 0.2);
+  fill: rgba(0, 0, 0, 0.5);
 }

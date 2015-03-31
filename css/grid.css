@@ -185,7 +185,8 @@
 /*Tables, Table rows and Table cells*/
 table {
 	width: 100%;
-	border-collapse: collapse;
+	/*border-collapse: collapse;*/
+	border-collapse: inherit;
 }
 
 td{
@@ -211,5 +212,9 @@ tr{
 }
 
 .table-second {
-	width: 279%;
+	/*width: 233%;*/
+}
+
+li{
+	display: block;
 }

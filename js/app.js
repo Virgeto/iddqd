@@ -18,12 +18,18 @@ $(document).ready(function () {
         var y = e.pageY;
         var clickY = y - $(this).offset().top;
         var clickX = x - $(this).offset().left;
-      var box = this;
-       
-      var setX = parseInt(clickX);
-      var setY = parseInt(clickY);
-       $(this).find("svg").remove();
+        var box = this;
+        var setX = parseInt(clickX);
+        var setY = parseInt(clickY);
+        var activeItem =$('.nav-cell-text');
+
+        activeItem.removeClass('active');
+        $(this).find('.nav-cell-text').addClass('active');
+       // $(this).delay(5000).find("svg").remove();
        $(this).append('<svg><circle cx="'+setX+'" cy="'+setY+'" r="'+10+'"><animate attributeType="xml" attributeName="r" from="0" to="200" dur=".3s" fill="freeze"/><animate attributeType="CSS" attributeName="opacity" from="1" to="0" dur=".5s" fill="freeze"/></circle></svg>');
+       setTimeout(function(){
+             $("svg").remove();
+        },500);
     });
 });
 // -----------------------------------------------------------------------
