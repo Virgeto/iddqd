@@ -4,16 +4,9 @@ html {
 }
 
 body {
-    min-height: 10%;
-    background-color: #000;
-    background: url('images/servicebg.png') repeat-y center center fixed;
-       -moz-background-size: cover;
-    -webkit-background-size: cover;
-         -o-background-size: cover;
-            background-size: cover;
-    background-attachment: fixed;
+    background-color: #fff;
     font-family: "vodafone", "Lucida Grande",Arial,Sans-serif;
-/*    font-size: 14px;*/
+    margin-top:0 !important;
     -webkit-font-size-adjust: none;
     font-size-adjust: none;
     font-stretch: normal;
@@ -25,7 +18,7 @@ body {
     padding: 0;
     color: #fff;    
     background-repeat: repeat;
-    vertical-align: middle;
+    /*vertical-align: middle;*/
     overflow: scroll;
 	-webkit-user-select: none;
 	   -moz-user-select: none;
@@ -33,6 +26,14 @@ body {
 	     -o-user-select: none;
 	        user-select: none;
 
+}
+
+ input:valid { 
+	border:1px solid blue;
+}
+
+ input:invalid { 
+	border:1px solid red;
 }
 
 a {
@@ -65,6 +66,7 @@ li {
 	height: 40em;
 	background: #fff url('../img/header_bg.jpg') no-repeat center center;
 	border-bottom: 1px solid #ddd;
+	overflow: hidden;
 }
 
 	/*LOGO*/
